@@ -1,42 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
+import NavbarMenu from "./NavbarMenu";
+import NavbarAuth from "./NavbarAuth";
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
-    <div
-      className="gpt
-    3__navbar"
-    >
-      <div
-        className="gpt
-      3__navbar-links"
-      >
-        <div
-          className="gpt
-        3__navbar-links_logo"
-        >
-          <img src={logo} alt="logo" />
+    <div className="navbar">
+      <div className="navbar-links">
+        <div className="navbar-links_logo">
+          <img src={logo} alt="Logo" />
         </div>
-        <div className="gpt3__navbar-links_container">
-          <p>
-            <a href="#home">Home</a>
-          </p>
-          <p>
-            <a href="#wgpt3">What is GPT?</a>
-          </p>
-          <p>
-            <a href="#possibilities">Open AI</a>
-          </p>
-          <p>
-            {" "}
-            <a href="#features">Case Studies</a>
-          </p>
-          <p>
-            <a href="#blog">Library</a>
-          </p>
+        <div className="navbar-links_container">
+          <NavbarMenu />
         </div>
+      </div>
+      <div className="navbar-sign">
+        <NavbarAuth />
+      </div>
+      <div className="navbar-menu">
+        {toggleMenu ? (
+          <RiCloseLine
+            color="#fff"
+            size={27}
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <RiMenu3Line
+            color="#fff"
+            size={27}
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
+        {toggleMenu && (
+          <div className="navbar-menu-container scale-up-center">
+            <div className="navbar-menu-links">
+              <NavbarMenu />
+            </div>
+            <div className="navbar-menu-sign">
+              <NavbarAuth />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,12 @@
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 650px) {
+  .brands {
+    flex-direction: column;
+  }
+}

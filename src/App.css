@@ -1,14 +1,17 @@
-/* Animations: https://animista.net/play/basic */
-
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
   scroll-behavior: smooth;
 }
 
 body {
   background: var(--color-bg);
+  width: 100%;
+}
+
+a {
+  color: unset;
   text-decoration: none;
 }
 
@@ -79,6 +82,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
@@ -95,17 +99,17 @@ body {
     padding: 4rem;
   }
 
-  .section-margin {
+  .section__margin {
     margin: 4rem;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .section__padding {
     padding: 4rem 2rem;
   }
 
-  .section-margin {
+  .section__margin {
     margin: 4rem 2rem;
   }
 }
