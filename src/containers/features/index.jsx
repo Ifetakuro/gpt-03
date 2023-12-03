@@ -24,7 +24,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="feature section__padding">
+    <div className="feature section__padding" id="features">
       <GradientInfo
         bigText={
           "The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen."
@@ -32,8 +32,8 @@ const Features = () => {
         smallText={"Request Early Access to Get Started"}
       />
       <div className="features-section">
-        {features.map((feature) => (
-          <FeatureCard {...feature} key={feature.title} />
+        {features.map((feature, index) => (
+          <FeatureCard {...feature} key={index} />
         ))}
       </div>
     </div>

@@ -13,7 +13,7 @@ const Brand = () => {
   return (
     <div className="brands section__padding">
       {brands.map(({ img, name }) => (
-        <img src={img} alt={name} />
+        <img src={img} alt={name} key={name} />
       ))}
     </div>
   );

@@ -20,7 +20,7 @@ const WhatGPT3 = () => {
     },
   ];
   return (
-    <div className="whatGpt3 section__margin">
+    <div className="whatGpt3 section__margin" id="wgpt3">
       <GradientDivider />
       <div className="gpt-meaning">
         <h3>What is GPT-3</h3>
@@ -37,8 +37,8 @@ const WhatGPT3 = () => {
         smallText={"Explore The Library"}
       />
       <div className="whatGpt03-offers">
-        {offers.map((offers) => (
-          <FeatureCard {...offers} key={offers.title} />
+        {offers.map((offers, index) => (
+          <FeatureCard {...offers} key={index} />
         ))}
       </div>
     </div>

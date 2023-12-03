@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="navbar">
+    <div className="navbar gradient__bg">
       <div className="navbar-links">
         <div className="navbar-links_logo">
           <img src={logo} alt="Logo" />

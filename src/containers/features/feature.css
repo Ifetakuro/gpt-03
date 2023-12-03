@@ -4,13 +4,15 @@
 
 .feature,
 .feature .gradient-info,
-.features-section {
+.features-section,
+.features-section .fb-heading {
   display: flex;
   gap: 40px;
 }
 
 .feature .gradient-info,
-.features-section {
+.features-section,
+.features-section .fb-heading {
   flex-direction: column;
 }
 
@@ -28,6 +30,8 @@
 
 .features-section .fb-heading {
   flex: 1;
+  justify-self: flex-start;
+  gap: 5px;
 }
 
 .features-section p {
@@ -37,7 +41,6 @@
 
 .features-section h3 {
   font-size: 18px;
-  margin-top: 5px;
 }
 
 @media screen and (max-width: 1050px) {

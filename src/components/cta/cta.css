@@ -1,0 +1,50 @@
+.cta {
+  border-radius: 1rem;
+  background: var(--gradient-bar);
+  overflow: hidden;
+  padding: 3rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta p {
+  color: #0e0e0e;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.cta h3 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.cta button {
+  border-radius: 40px;
+  background: #000;
+  width: 189.136px;
+  height: 59.398px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: var(--font-family);
+  transition: all 0.5s;
+}
+
+.cta button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 998px) {
+  .cta {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
