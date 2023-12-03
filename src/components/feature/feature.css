@@ -1,0 +1,19 @@
+.feature-box {
+  display: flex;
+  gap: 10px;
+}
+
+.feature-box h3 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.96px;
+  font-family: var(--font-family);
+  color: #fff;
+}
+
+.feature-box p {
+  color: #81afdd;
+  font-size: 16px;
+  font-family: var(--font-family);
+  font-weight: 500;
+}

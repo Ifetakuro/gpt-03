@@ -1,0 +1,12 @@
+.gradient-info h2 {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 45px;
+}
+
+.gradient-info p {
+  color: #ff8a71;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}

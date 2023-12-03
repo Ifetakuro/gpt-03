@@ -1,0 +1,66 @@
+.feature {
+  width: 100%;
+}
+
+.feature,
+.feature .gradient-info,
+.features-section {
+  display: flex;
+  gap: 40px;
+}
+
+.feature .gradient-info,
+.features-section {
+  flex-direction: column;
+}
+
+.feature .gradient-info {
+  flex: 1.5;
+}
+
+.feature .features-section {
+  flex: 2;
+}
+
+.features-section .feature-box {
+  gap: 50px;
+}
+
+.features-section .fb-heading {
+  flex: 1;
+}
+
+.features-section p {
+  flex: 2;
+  font-size: 14px;
+}
+
+.features-section h3 {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+  .features-section .feature-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature {
+    flex-direction: column;
+  }
+
+  .feature .gradient-info h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .features-section .feature-box h3 {
+    font-size: 20px;
+  }
+  .features-section .feature-box p {
+    font-size: 14px;
+  }
+}

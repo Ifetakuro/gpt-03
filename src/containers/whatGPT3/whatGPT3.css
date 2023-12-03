@@ -1,0 +1,151 @@
+.whatGpt3 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0.4);
+  padding: 3rem;
+  background: var(--color-footer);
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.gpt-meaning,
+.gradient-info,
+.gradient-info div {
+  display: flex;
+  gap: 10px;
+}
+
+.gpt-meaning h3,
+.gpt-meaning p,
+.whatGpt3 .gradient-info h2,
+.whatGpt3 .gradient-info div {
+  flex: 1;
+  font-family: var(--font-family);
+  color: #fff;
+}
+
+.gpt-meaning h3 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 75px;
+  letter-spacing: -0.96px;
+}
+.gpt-meaning p {
+  color: #81afdd;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  flex: 2;
+}
+
+.whatGpt3 .gradient-info {
+  margin: 4rem 0;
+}
+
+.whatGpt3 .gradient-info div {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.whatGpt03-offers {
+  display: grid;
+  grid-template: auto / repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.whatGpt3 .feature-box {
+  flex-direction: column;
+}
+.whatGpt3 .feature-box h3 {
+  margin-top: 15px;
+}
+
+.whatGpt3 .feature-box div {
+  min-height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .whatGpt3 {
+    padding: 3rem 1rem;
+    /* background: var(--color-footer); */
+  }
+
+  .gpt-meaning,
+  .whatGpt3 .gradient-info,
+  .whatGpt3 .gradient-info div,
+  .whatGpt03-offers,
+  .whatGpt03-offers .feature-box {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .whatGpt3 .gradient-info h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .whatGpt3 .feature-box,
+  .gpt-meaning {
+    gap: 20px !important;
+  }
+
+  .gpt-meaning h3,
+  .whatGpt3 .feature-box h3 {
+    font-size: 20px;
+  }
+  .gpt-meaning p,
+  .whatGpt3 .feature-box p {
+    font-size: 14px;
+  }
+
+  .whatGpt3 .feature-box div {
+    min-height: fit-content !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .whatGpt03-offers {
+    grid-template: auto / 100%;
+  }
+}

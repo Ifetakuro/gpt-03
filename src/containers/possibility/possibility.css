@@ -1,0 +1,61 @@
+.possibility {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  /* flex-direction: column; */
+}
+
+.possibility-img {
+  width: 100%;
+  flex: 1;
+  display: flex;
+}
+
+.possibility-img img {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.possibility-info {
+  flex: 1;
+  align-self: flex-end;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.possibility-info span {
+  color: #71e5ff;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 20px;
+}
+.possibility-info h2 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.possibility-info p {
+  color: #81afdd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1050px) {
+  .possibility {
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .possibility-info h2 {
+    font-size: 28px;
+  }
+}
