@@ -1,21 +1,21 @@
-const NavbarMenu = () => (
-  <>
-    <p>
-      <a href="#home">Home</a>
-    </p>
-    <p>
-      <a href="#wgpt3">What is GPT3?</a>
-    </p>
-    <p>
-      <a href="#possibility">Open AI</a>
-    </p>
-    <p>
-      <a href="#features">Features</a>
-    </p>
-    <p>
-      <a href="#blog">Library</a>
-    </p>
-  </>
-);
+const NavbarMenu = ({ handleClose }) => {
+  const links = [
+    { link: "#home", name: "Home" },
+    { link: "#wgpt3", name: "What is GPT3?" },
+    { link: "#possibility", name: "Open AI" },
+    { link: "#features", name: "Features" },
+    { link: "#blog", name: "Library" },
+  ];
+
+  return (
+    <>
+      {links.map(({ link, name }) => (
+        <p key={name} onClick={handleClose}>
+          <a href={link}>{name}</a>
+        </p>
+      ))}
+    </>
+  );
+};
 
 export default NavbarMenu;

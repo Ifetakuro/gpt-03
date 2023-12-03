@@ -38,9 +38,12 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="navbar-menu-container scale-up-center">
             <div className="navbar-menu-links">
-              <NavbarMenu />
+              <NavbarMenu handleClose={() => setToggleMenu(false)} />
             </div>
-            <div className="navbar-menu-sign">
+            <div
+              className="navbar-menu-sign"
+              onClick={() => setToggleMenu(false)}
+            >
               <NavbarAuth />
             </div>
           </div>
