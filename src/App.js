@@ -1,28 +1,25 @@
-import { Brand, Cta, Navbar } from "./components";
-import {
-  Blog,
-  Features,
-  Footer,
-  Header,
-  Possibility,
-  WhatGPT3,
-} from "./containers";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home";
+import PageLayout from "./components/pageLayout";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <PageLayout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "signin", element: <SignIn /> },
+        { path: "signup", element: <SignUp /> },
+      ],
+    },
+  ]);
   return (
     <div className="app">
-      <div className="gradient__bg">
-        <Navbar />
-        <Header />
-      </div>
-      <Brand />
-      <WhatGPT3 />
-      <Features />
-      <Possibility />
-      <Cta />
-      <Blog />
-      <Footer />
+      <RouterProvider router={router} />
     </div>
   );
 };

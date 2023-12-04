@@ -1,0 +1,90 @@
+footer {
+  background: #031b34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+footer h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 75px;
+  letter-spacing: -2.48px;
+  max-width: 700px;
+  margin: auto;
+}
+
+footer button {
+  border: 1px solid #fff;
+  outline: none;
+  width: 218px;
+  height: 65px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0.5rem;
+}
+
+footer button:hover {
+  border-color: #ff8a71;
+  color: #ff8a71;
+}
+
+.footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-logo-sec img {
+  margin-bottom: 20px;
+}
+
+.footer-lists h5,
+.footer-lists li,
+.footer-logo-sec p,
+footer span {
+  color: #fff;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.footer-lists ul {
+  list-style-type: none;
+}
+
+.footer-lists h5 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer-lists li:hover {
+  cursor: pointer;
+  color: #ff8a71;
+}
+.footer-lists li,
+.footer-logo-sec,
+footer span {
+  font-size: 12px;
+}
+
+.footer-logo-sec,
+.footer-lists {
+  min-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  footer h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}

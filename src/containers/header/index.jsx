@@ -5,7 +5,7 @@ import ai from "../../assets/ai.png";
 
 const Header = () => {
   return (
-    <div className="header section__padding" id="home">
+    <header className="header section__padding" id="home">
       <div className="header-content">
         <h1 className="gradient__text">
           Let’s Build Something amazing with GPT-3 OpenAI
@@ -28,7 +28,7 @@ const Header = () => {
       <div className="header-img">
         <img src={ai} alt="ai" />
       </div>
-    </div>
+    </header>
   );
 };
 

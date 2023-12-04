@@ -24,7 +24,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="feature section__padding" id="features">
+    <section className="feature section__padding" id="features">
       <GradientInfo
         bigText={
           "The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen."
@@ -36,7 +36,7 @@ const Features = () => {
           <FeatureCard {...feature} key={index} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

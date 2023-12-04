@@ -4,19 +4,22 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import NavbarMenu from "./NavbarMenu";
 import NavbarAuth from "./NavbarAuth";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const path = location.pathname === "/";
 
   return (
     <div className="navbar gradient__bg">
       <div className="navbar-links">
         <div className="navbar-links_logo">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" onClick={() => navigate("/")} />
         </div>
-        <div className="navbar-links_container">
-          <NavbarMenu />
-        </div>
+        <div className="navbar-links_container">{path && <NavbarMenu />}</div>
       </div>
       <div className="navbar-sign">
         <NavbarAuth />
@@ -37,9 +40,11 @@ const Navbar = () => {
         )}
         {toggleMenu && (
           <div className="navbar-menu-container scale-up-center">
-            <div className="navbar-menu-links">
-              <NavbarMenu handleClose={() => setToggleMenu(false)} />
-            </div>
+            {path && (
+              <div className="navbar-menu-links">
+                <NavbarMenu handleClose={() => setToggleMenu(false)} />
+              </div>
+            )}
             <div
               className="navbar-menu-sign"
               onClick={() => setToggleMenu(false)}

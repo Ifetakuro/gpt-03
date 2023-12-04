@@ -44,7 +44,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="section__padding blog" id="blog">
+    <section className="section__padding blog" id="blog">
       <h2 className="gradient__text">
         The buzz is real, and we're not just witnessing it, we're capturing the
         whirlwind of excitement in our blog.{" "}
@@ -54,7 +54,7 @@ const Blog = () => {
           <Article key={index} {...article} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

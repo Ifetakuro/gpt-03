@@ -4,7 +4,7 @@ import ailady from "../../assets/possibility.png";
 
 const Possibility = () => {
   return (
-    <div className="possibility section__padding" id="possibility">
+    <section className="possibility section__padding" id="possibility">
       <div className="possibility-img">
         <img src={ailady} alt="Lady with vr" />
       </div>
@@ -20,7 +20,7 @@ const Possibility = () => {
         </p>
         <span>Request Early Access to Get Started</span>
       </div>
-    </div>
+    </section>
   );
 };
 
