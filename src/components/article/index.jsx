@@ -5,7 +5,7 @@ const Article = ({ img, date, question }) => {
   return (
     <div className="article">
       <div className="article-img">
-        <img src={img} />
+        <img src={img} alt="ai" />
       </div>
       <div className="article-info">
         <span>{date}</span>
